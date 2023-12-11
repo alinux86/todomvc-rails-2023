@@ -1,6 +1,7 @@
 <li id="<%= dom_id todo %>">
   <div class="view">
     <label><%= todo.title %></label>
-    <%# TODO %>
+    <%# il faut un espace après le :delete et la virgule sinon ça plante %>
+    <%= button_to "", todo , method: :delete , class: "destroy"%>
   </div>
 </li>

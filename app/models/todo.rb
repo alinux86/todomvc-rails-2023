@@ -12,5 +12,8 @@ class Todo < ApplicationRecord
 
   def update_or_destroy(attributes)
     # TODO
+     assign_attributes(attributes)
+     title? ? save : destroy 
   end
+  
 end
